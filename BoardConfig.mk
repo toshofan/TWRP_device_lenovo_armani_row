@@ -52,25 +52,25 @@ MALLOC_SVELTE := true
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/lenovo/armani_row/kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 
 # USB Mounting
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun1/file"
 
 # Recovery
-BOARD_HAS_NO_SELECT_BUTTON := true
+#BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_PREBUILT_RECOVERY_KERNEL := device/lenovo/armani_row/kernel
 TARGET_RECOVERY_INITRC := device/lenovo/armani_row/init.rc
 TARGET_RECOVERY_FSTAB :=device/lenovo/armani_row/recovery.fstab
-BOARD_HAS_LARGE_FILESYSTEM := true
-BOARD_HAS_NO_MISC_PARTITION := true
-BOARD_USES_MMCUTILS := true
+#BOARD_HAS_LARGE_FILESYSTEM := true
+#BOARD_HAS_NO_MISC_PARTITION := true
+#BOARD_USES_MMCUTILS := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 DEVICE_RESOLUTION := 480x854
-# TW_INTERNAL_STORAGE_PATH := "/sdcard1"
-# TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard1"
-# TW_EXTERNAL_STORAGE_PATH := "/sdcard2"
-# TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard2"
+TW_INTERNAL_STORAGE_PATH := "/sdcard1"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard1"
+TW_EXTERNAL_STORAGE_PATH := "/sdcard2"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard2"
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_FLASH_FROM_STORAGE := true 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun1/file
